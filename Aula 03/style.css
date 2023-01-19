@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
 * {
     margin: 0;
     color: white;
@@ -65,7 +67,7 @@ input:checked {
     border: 2px solid #A78BFA;
 }
 
-.habits-item {
+.habit {
     margin: 50px 40px;
     font-size: 25px;
 }
@@ -85,5 +87,6 @@ input:checked {
 
 .day div {
     margin-bottom: 10px;
+    font-family: 'Roboto Mono', monospace;
 }
 
