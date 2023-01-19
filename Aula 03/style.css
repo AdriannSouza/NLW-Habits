@@ -17,10 +17,13 @@ body {
 
 header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;  
-    height: 10vh;
-    margin: 5px 10px;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: black;
 }
 
 .logo-habits {
@@ -28,6 +31,10 @@ header {
 }
 
 button.register {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
     border: 1px solid #8B5CF6;
     border-radius: 8px;
 
@@ -37,7 +44,7 @@ button.register {
     background-color: #09090A;
     
     padding: 8px 22px;
-    margin-right: 20px
+    margin-right: 50px;
 }
 
 .plus {
@@ -46,9 +53,12 @@ button.register {
     margin-right: 12px;
 }
 
-form {
+#form-habits {
     display: flex;
-
+    margin-top: 200px;
+    padding: 48px 48px 48px;
+    width: fit-content;
+    margin-right: ;
 }
 
 input { 
@@ -68,13 +78,13 @@ input:checked {
 }
 
 .habit {
-    margin: 50px 40px;
+    margin: 55px 20px;
     font-size: 25px;
 }
 
 .days {
     display: flex;
-    gap: 60px;
+    gap: 20px;
 }
 
 .day {
@@ -90,3 +100,8 @@ input:checked {
     font-family: 'Roboto Mono', monospace;
 }
 
+@media (max-width: 570px) {
+    button div {
+        display: none;
+    }
+}
